@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <title>Films & séries</title>
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <div class="formRecherche">
+      <!-- 'onsubmit="return false;"' évite que la page se recharge à la soumission du formulaire -->
+      <form onsubmit="return false;">
+        <input type="text" id="motsRecherches" />
+        <button onclick="rechercher()">Chercher</button>
+      </form>
+    </div>
+    <div id="nbResultats"></div>
+    <div id="listeResultats"></div>
+  </body>
+</html>
