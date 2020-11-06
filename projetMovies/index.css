@@ -1,4 +1,48 @@
 body {
   background-color: #333;
   color: #ddd;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  color: #ddd;
+  text-decoration: none;
+}
+
+#listeResultats {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.media {
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  width: 33%;
+  padding: 16px;
+}
+
+.poster {
+  height: 200px;
+}
+
+.infos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 16px;
+}
+
+.titre {
+  font-size: 1.2em;
+}
+
+.type {
+  font-size: 1em;
+}
+
+.annee {
+  font-size: 0.8em;
+  opacity: 0.8;
 }

@@ -5,12 +5,13 @@
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="index.js"></script>
   </head>
-  <body>
+  <body onload="verifierCache()">
     <div class="formRecherche">
       <!-- 'onsubmit="return false;"' évite que la page se recharge à la soumission du formulaire -->
       <form onsubmit="return false;">
         <input type="text" id="motsRecherches" />
         <button onclick="rechercher()">Chercher</button>
+        Historique : <span id="historique"></span>
       </form>
     </div>
     <div id="nbResultats"></div>
